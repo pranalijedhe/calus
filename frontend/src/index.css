@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 215 20.2% 65.1%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 213 24% 8%;
+    --foreground: 212 18% 96%;
+    --muted: 219 16% 14%;
+    --muted-foreground: 217 20% 72%;
+    --popover: 216 18% 10%;
+    --popover-foreground: 212 18% 96%;
+    --border: 216 18% 18%;
+    --input: 214 18% 16%;
+    --card: 216 16% 12%;
+    --card-foreground: 212 18% 96%;
+    --primary: 193 83% 55%;
+    --primary-foreground: 222 84% 4.9%;
+    --secondary: 215 18% 16%;
+    --secondary-foreground: 212 20% 90%;
+    --accent: 193 83% 55%;
+    --accent-foreground: 222 84% 4.9%;
+    --destructive: 356 78% 61%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 193 83% 55%;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  .dark .bg-white\/90 {
+    background-color: rgba(15, 23, 42, 0.92) !important;
+  }
+
+  .dark .bg-white {
+    background-color: #0f172a !important;
+  }
+
+  .dark .bg-gray-50,
+  .dark .bg-secondary-50,
+  .dark .bg-secondary-100,
+  .dark .bg-secondary-200 {
+    background-color: #0f172a !important;
+  }
+
+  .dark .bg-gray-100,
+  .dark .hover\:bg-gray-100:hover,
+  .dark .hover\:bg-white\/10:hover {
+    background-color: rgba(255, 255, 255, 0.06) !important;
+  }
+
+  .dark .bg-white/90,
+  .dark .bg-white,
+  .dark .bg-gray-50,
+  .dark .bg-gray-100,
+  .dark .bg-secondary-50,
+  .dark .bg-secondary-100,
+  .dark .bg-secondary-200 {
+    background-color: #0f172a !important;
+  }
+
+  .dark .border-gray-200,
+  .dark .border-gray-300,
+  .dark .border-secondary-200,
+  .dark .border-secondary-300,
+  .dark .border-gray-100,
+  .dark .border-white\/10 {
+    border-color: #253047 !important;
+  }
+
+  .dark .text-gray-900,
+  .dark .text-gray-800,
+  .dark .text-gray-700,
+  .dark .text-primary-900,
+  .dark .text-secondary-900 {
+    color: #e2e8f0 !important;
+  }
+
+  .dark .text-gray-500,
+  .dark .text-gray-600,
+  .dark .text-gray-400,
+  .dark .text-muted-foreground {
+    color: #94a3b8 !important;
+  }
+
+  .dark .bg-primary-500 {
+    background-color: #36c5f0 !important;
+  }
+
+  .dark .text-primary-500 {
+    color: #36c5f0 !important;
+  }
+
+  .dark .border-primary-500 {
+    border-color: #36c5f0 !important;
+  }
+
+  .dark .focus\:border-primary-500:focus {
+    border-color: #36c5f0 !important;
+  }
+
+  .dark .focus\:ring-primary\/20:focus {
+    box-shadow: 0 0 0 3px rgba(54, 197, 240, 0.2) !important;
+  }
+
+  .dark .hover\:bg-primary\/10:hover {
+    background-color: rgba(54, 197, 240, 0.14) !important;
+  }
+
+  .dark .shadow-2xl {
+    box-shadow: 0 30px 65px rgba(0, 0, 0, 0.35);
+  }
+}
